@@ -1,0 +1,197 @@
+<!DOCTYPE html> <!-- Страница Продажа керамического кирпича -->
+<html>
+    <head>				
+        <link href="public/assets/css/Style.css" rel="stylesheet" type="text/css"/> <!-- подключение CSS-файла Style.css к нашей HTML-странице -->
+        <link href="public/assets/css/mediarequests.css" rel="stylesheet" type="text/css"/> <!-- подключение CSS-файла с медиазапросами -->				
+    	<script src="public/assets/js/jquery-3.3.1.js"></script>		
+		<!-- для слайдера -->		
+		<link href="public/Слайдер/mobilyslider/css/default.css" rel="stylesheet" type="text/css"/>		
+		<script src="public/Слайдер/mobilyslider/js/jquery.js" type="text/javascript"></script>
+		<script src="public/Слайдер/mobilyslider/js/mobilyslider.js" type="text/javascript"></script>
+		<script src="public/Слайдер/mobilyslider/js/init.js" type="text/javascript"></script>
+        <title> Производство и продажа строительных материалов </title>
+		<meta name="viewport" content="width=device-width, initial-scale=1"> <!-- указание того, что страница будет отображаться на разных устройствах  -->				
+    </head>
+	
+	<body>  
+		<div id="content">	
+			<div id="header"> <!-- шапка сайта -->
+				<img id="logo" src="public/assets/img/logo.png"></img> 
+				<div class="leafy">
+					<a href="main.html" class="verdant">ГЛАВНАЯ</a>
+					<a href="news.html" class="verdant">НОВОСТИ</a>
+					<a href="aboutcompany.html" class="verdant">О КОМПАНИИ</a>
+					<a style="color:#FFFF00" href="materials.html" class="verdant">СТРОТЕЛЬНЫЕ МАТЕРИАЛЫ</a>
+					<a href="repair.html" class="verdant">РЕМОНТ</a>								
+					<a href="installation.html" class="verdant">МОНТАЖ</a>
+					<a style="" href="yachtrental.html" class="verdant">КОНТАКТЫ</a>
+				</div>
+						
+				<div class="seek">
+					<form class="catalin" novalidate>
+						<input id="seach" type="text" placeholder="Поиск ..." required>
+						<button type="submit">Найти</button>
+					</form>
+				</div>	
+				<img id="primary" src="public/assets/img/grafika.jpg"></img>
+			</div>		
+		
+			<!-- блок каталога товаров -->
+			<div id="productcatalog">
+				<!-- представление каталога в виде краткого списка -->
+				<div id="shortened"><div></div><div></div><div></div></div>
+				<div style="position:relative; left:50px; top:-32px; width:1px; height:35px; background-color:black;"></div>
+				<div style="font-family:Arial; font-size:20px; position:relative; left:60px; top:-62px;">Каталог товаров</div>
+			</div>
+
+			<!-- "корзина" -->			
+			<div style="position:relative; top:-120px; left:300px; height:50px; width:150px; background-color:#20B2AA;">			
+				<img style="width:35px; position:relative; top:7px; left:7px;" src="public/assets/img/basket.png"></img>
+				<div style="position:relative; top:-32px; left:50px; height:36px; width:1px; background-color:#911E42;"></div>
+				<div style="font-family:Arial; font-size:20px; position:relative; left:60px; top:-62px; color:#FFC0CB">Корзина</div>
+			</div>			
+			
+			<!-- ссылка на личный кабинет -->
+			<div id="personalaccount" style="position:relative; top:-170px; left:470px; height:50px; width:220px; background-color:#800080; color:#FDEAA8; font-size:20px; font-family:Arial;">
+				<img style="width:35px; position:relative; top:8px; left:7px;" src="public/assets/img/personalaccount.png"></img>
+				<div style="position:relative; top:-26px; left:52px;">Личный кабинет</div>
+			</div>
+			
+			<!-- избранное -->
+			<div style="position:relative; top:-220px; left:710px; padding-right:30px; width:180px; height:50px; background-color:#F0E68C">
+				<div class="heart"></div>
+				<div style="font-family:Arial; position:relative; top:-20px; left:60px; font-size:20px;"> <u style="text-decoration:none;">Избранное</u>
+					<div style="position:relative; top:-24px; left:105px; color:red;">
+					<div style=""> &#40 0 &#41 </div></div>
+				</div>
+			</div>
+			
+			
+			<div style="position:relative; top:-195px; left:52px;">
+				<div style="font-family:Arial; font-size:20px; color:darkblue;"> Строительные материалы</div>
+				<img style="width:50px; position:relative; left:247px; top:-36px" src="public/assets/img/wood.png"></img>
+				<div style="font-family:Arial; font-size:20px; position:relative; left:300px; top:-76px; color:darkblue;"> Кирпич </div>
+				<img style="width:50px; position:relative; left:370px; top:-113px" src="public/assets/img/wood.png"></img>
+				<div style="font-family:Arial; font-size:20px; position:relative; left:425px; top:-153px; color:darkblue;"> Керамический кирпич </div>
+			</div>			
+
+			<div class="productheader">Кирпич керамический красный гладкий M-150 250х120х65 мм</div>
+			
+			<!-- слайдер -->
+			<div style="position:relative; top:-250px; left:407px" id="slider">
+				<div class="slider">
+					<div class="sliderContent">
+						<div class="item">
+							<img src="public/assets/img/Каталог товаров/Кирпичи/Кирпич керамический/Слайдер/kirpich-polusuhogo-pressovaniya-700x476.jpg"></img>		
+						</div>
+						<div class="item">
+							<img src="public/assets/img/Каталог товаров/Кирпичи/Кирпич керамический/Слайдер/kz6.jpg"/>
+						</div>
+						<div class="item">
+							<img src="public/assets/img/Каталог товаров/Кирпичи/Кирпич керамический/Слайдер/dostavka_kirpicha_02.jpg"/></img>
+						</div>
+						<div class="item">
+							<img src="public/assets/img/Каталог товаров/Кирпичи/Кирпич керамический/Слайдер/011f2e47451c1f34c784cd53a9ef4510.jpg"/></img>
+						</div>
+						<div class="item">
+							<img src="public/assets/img/Каталог товаров/Кирпичи/Кирпич керамический/Слайдер/krasnyybordo.jpg"/>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- блок характеристик -->
+			<div style="position:relative; top:-250px; left:50px; width:330px; height:400px; background-color:#6B8E23">
+				<div style="font-family:Courier New; position:relative; top:-400px; left:0px; font-size:32px; text-transform: uppercase; text-align:center; color:#FFFDD0">
+					характеристики
+				</div>
+				<table class="feature">
+					<tbody>
+						<tr><td>Размер</td><td>250x120x65 мм</td></tr>
+						<tr><td>Вид</td><td>строительный</td></tr>
+						<tr><td>Морозостойкость</td><td>F 50</td></tr>
+						<tr><td>Теплопроводность</td><td>0,2 Вт/(м°C)</td></tr>
+						<tr><td>Прочность на сжатие</td><td>100 кгс/см&sup2;</td></tr>		
+						<tr><td>Вес кирпича</td><td>1.6 кг.</td></tr>
+						<tr><td>Цвет</td><td>красный</td></tr>
+						<tr><td>Марка</td><td> M-150</td></tr>
+						<tr><td>Влагопоглощение</td><td>8-12%</td></tr>
+						<tr><td>Цена</td><td>7.50 руб.</td></tr>								
+					</tbody>
+				</table>				
+			</div>
+			
+			<!-- блок выбора объёма товара в количествах  -->
+			<div class="numberinput">
+				<button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" ></button>
+				<input class="quantity" min="1" value="1" type="number">
+				<button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+			</div>
+			
+			
+		
+
+
+			
+			
+		<!-- блок подписки на рассылку -->	
+		<div class="subscription">
+			<div style="font-family:Arial; font-size:20px; position:relative; top:17px; left:0px; color:#DC143C;">Подпишитесь на нашу рассылку!</div>
+		
+			<form>
+				<input type ="text" value="Введите e-mail"></input>
+				<input type ="submit" value="Подписаться"></input>			
+			</form>			
+			
+			
+			
+		</div>
+			
+			
+			
+			
+	
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			<!-- Бургер меню в которое будет сворачиваться шапка сайта -->
+			<div onclick="burgerclick()" class="burgermenu"> МЕНЮ
+				<div><hr></hr><hr></hr><hr></hr></div>
+				<div><hr></hr><hr></hr><hr></hr></div>
+			</div>
+	
+			<!-- шапка сайта, которая появиться, когда пользователь нажмёт на свёрнутое меню шапки сайта -->
+			<div class="moduleverticallinks">	
+				<div class="verticallinks">
+					<a href="main.html" class="component">ГЛАВНАЯ</a>
+					<a href="news.html" class="component">НОВОСТИ</a>
+					<a href="aboutcompany.html" class="component">О КОМПАНИИ</a>
+					<a href="materials.html" class="component">СТРОТЕЛЬНЫЕ МАТЕРИАЛЫ</a>
+					<a href="repair.html" class="component">РЕМОНТ</a>								
+					<a style="color:#FFFF00" href="installation.html" class="component">МОНТАЖ</a>
+					<a href="yachtrental.html" class="component">КОНТАКТЫ</a>
+							
+					<div class="blockseach">
+						<form class="find" novalidate>
+							<input style="width:522px" id="seach" type="text" placeholder="Поиск ..." required>
+							<button type="submit">Найти</button>
+						</form>
+					</div>
+				</div>
+						
+				<!-- блок со стрелкой вверх -->
+				<div onclick="hideburger()" class="triangltopblock"><img width="50" src="public/assets/img/waxed.png"></img></div>
+			</div>						
+		</div>
+				
+		<script src = "public/assets/js/functions.js"></script> <!-- подключение нашего JavaScript-файла functions.js в конце странице, т.к. JavaScript-файл работает с тэгами, 
+		 и нельзя его вставлять раньше тэгов -->		 
+    </body> 
+</html>
